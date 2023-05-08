@@ -1,0 +1,20 @@
+---
+import { Icon } from "astro-icon";
+const {title} = Astro.props
+import '../styles/global.css'
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <h1>Joyce's Astro Site</h1>
+    <Icon name="ri:linkedin-box-fill" width={25}></Icon>
+    <Icon name="ri:github-fill" width={25}></Icon>
+  </body>
+</html>
